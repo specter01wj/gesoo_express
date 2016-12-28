@@ -1,0 +1,105 @@
+@import '_mixins';
+
+.btn-circle {
+   margin: 0;  
+   padding: 0;
+   width: 75px;
+   height: 75px;
+   line-height: 50px;
+   border-radius: 50%;
+   display:block;
+   .flaticon-plus::before{
+   		font-size: 40px;
+   		line-height: 75px;
+   }
+}
+
+#order-created{
+	color: @gesoo-blue;
+}
+#order-scheduled{
+	color: @gesoo-orange;
+}
+#order-shipping{
+	color: @gesoo-green;
+}
+#order-delivered{
+	color: @gesoo-linegray;
+}
+#order-paid{
+	color: #33cc33;
+}
+#order-delete{
+	color: @gesoo-red;
+}
+
+.orders-table .order-status{
+	width: 60px;
+}
+.order-type{
+	width: 75px;
+}
+.order-sign{
+	width: 50px;
+}
+
+.gesoo-blue {
+	background-color: @gesoo-blue;
+}
+.gesoo-red {
+	background-color: @gesoo-red;
+}
+
+.gesoo-nav {
+	height: 70px;
+	width: 100%;
+	.gesoo-navbar {
+		.gesoo-orderlist{
+			display: block;
+    		margin-left: 50%;
+    		margin-right: 50%;
+			img {
+				width: 180px;
+				height: 50px;
+				display: inline;
+			}
+		}
+	}
+	.gesoo-profile {
+		float: right;
+	}
+}
+.gesoo-login, .gesoo-login img {
+	width: 250px;
+	height: 80px;
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.ordertype-label {
+	position: relative;
+  	left: 25px;
+	text-align: justify;
+	font-size: 18px;
+
+	label {
+		display: block;
+		float: left;
+		margin: 5px;
+	}
+
+	input[type=radio] { 
+		width: 20px;
+		display: inline;
+		float:left; 
+		vertical-align:text-top;
+	}
+
+
+	label:hover {
+		cursor: pointer;
+	}
+	
+}

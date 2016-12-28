@@ -1,0 +1,54 @@
+        <td>
+            {{#equal status  0}}
+            <!-- <i class="flaticon-created"></i><br> -->
+            <div id='order-created'>已录入</div>
+            {{/equal}}
+
+            {{#equal status  1}}
+            <!-- <i class="flaticon-scheduled"></i> -->
+            <div id='order-scheduled'>已分配</div>
+            {{/equal}}
+
+            {{#equal status  2}}
+            <!-- <i class="flaticon-shipping"></i> -->
+            <div id='order-shipping'>正在配送</div>
+            {{/equal}}
+
+            {{#equal status  3}}
+            <!-- <i class="flaticon-delivered"></i> -->
+            <div id='order-delivered'>已送达</div>
+            {{/equal}}
+
+            {{#equal status  4}}
+            <!-- <i class="flaticon-paid"></i> -->
+            <div id='order-paid'>已结算</div>
+            {{/equal}}
+
+            {{#equal status  10}}
+            <!-- <i class="flaticon-delete"></i> -->
+            <div id='order-delete'>已取消</div>
+            {{/equal}}
+        </td>
+        <td>{{createdAt}}</td>
+        <td>{{orderId}}</td>
+        <td>
+            {{#equal orderType 0}}
+            送件
+            {{else}}
+            取件
+            {{/equal}}
+        </td>
+        <td>{{customerName}}</td>
+        <td>{{customerPhone}}</td>
+        <td>{{address}}, {{city}}, {{state}} {{zipcode}}</td>
+        <td>
+            {{#if signatureRequired}} 
+                是
+            {{else}}
+                否
+            {{/if}}
+        </td>
+        <td>
+            <a data-id="{{id}}" class="edit btn btn-primary gesoo-blue" href="#">编辑</a>
+            <a data-id="{{id}}" class="delete btn btn-danger gesoo-red" href="#">删除</a>
+        </td>

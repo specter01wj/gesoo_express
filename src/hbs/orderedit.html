@@ -1,0 +1,102 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Gesoo Express</title>
+    <!-- Custom styles for this template -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/bower_components/eonasdan-bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.min.css" />
+    <link href="main.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script type="text/javascript" src="/bower_components/eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js"></script>
+  <script type="text/javascript">
+            $(function () { 
+                $('#datetimepicker1').datetimepicker();
+            });
+        </script>
+
+  </head>
+
+  <body>
+    
+    <div id="form">
+      <form id="register_form" class="float-label" spellcheck="false">
+        <fieldset id="order-details">
+        <legend>Order Edit</legend>
+        
+       
+        <div class="row">
+          <div class="control col-xs-6">
+            <input type="text" name="name" placeholder="姓名" required />
+            <label for="name">姓名</label>
+          </div>
+          <div class="control col-xs-6">
+            <input type="text" name="orderid" placeholder="订单号" required />
+            <label for="name">订单号</label>
+          </div>
+        </div>
+       
+        <div class="row">
+          <div class="control col-xs-6">
+              <input type="text" name="address" placeholder="地址" required />
+              <label for="address">地址</label>
+          </div>
+          <div class="control col-xs-3">
+            <div class='input-group date' id='datetimepicker1'>
+                  <input type='text' name="date" class="form-control" placeholder="取货时间" required />
+                  <span class="input-group-addon">
+                      <span class="glyphicon glyphicon-calendar"></span>
+                  </span>
+            </div>
+          </div>
+          <div class="control col-xs-3">
+            <div class='input-group date' id='datetimepicker1'>
+                  <input type='text' name="date" class="form-control" placeholder="送货时间" required />
+                  <span class="input-group-addon">
+                      <span class="glyphicon glyphicon-calendar"></span>
+                  </span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="row">
+          <div class="control col-xs-6">
+            <input type="text" name="city" placeholder="城市" required />
+              <label for="city">城市</label>
+          </div>
+          <div class="control col-xs-3">
+            <input type="text" name="state" placeholder="州" required />
+              <label for="state">州</label>
+          </div>
+          <div class="control col-xs-3">
+            <input type="text" name="zip" placeholder="邮编" required />
+              <label for="zip">邮编</label>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="control col-xs-4">
+            <input type="text" name="tele" placeholder="电话" required />
+              <label for="tele">电话</label>
+          </div>
+          <div class="control col-xs-4">
+          </div>
+          <div class="control col-xs-4">
+            <label class="checkbox-inline"><input type="checkbox" name="sign" />是否签名</label>
+          </div>
+        </div>
+
+        </fieldset>
+        <div class="clearfix"></div>
+        <button class="btn btn-lg btn-primary btn-block" id="order-btn" type="submit">Submit!</button>
+      </form>
+      
+    </div>
+    
+  <script src="bundle.js"></script>
+  
+  </body>
+</html>

@@ -1,0 +1,23 @@
+{
+  "name": "gesoo-express",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "Jin Wang <specter01wj@gmail.com>"
+  ],
+  "license": "ISC",
+  "moduleType": [
+    "node"
+  ],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.6"
+  }
+}

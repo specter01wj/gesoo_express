@@ -1,0 +1,122 @@
+<div class="container index-page">  
+  <div class="row navbar navbar-default gesoo-nav">
+      
+      <div class="col-xs-9 gesoo-navbar">
+        <div class="navbar-header gesoo-orderlist">
+          <a class="navbar-brand" href="#"><img src="./media/g.png" alt="Gesoo Express"></a>
+        </div>
+      </div>
+
+      <div class="col-xs-3 gesoo-profile">
+
+        <div class="navbar-collapse">
+        
+          <ul class="nav navbar-nav navbar-right">
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">{{user.username}} <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="#changepassword">更改密码</a></li>
+                <li><a href="#logout">登出</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+  </div>
+
+  <section>
+    <div class="container">
+
+      <nav class="pull-left">
+        <ul class="pagination">
+          <li class="prev-driver">
+            <a aria-label="Previous">
+              <span aria-hidden="true">&laquo;</span>
+            </a>
+          </li>
+          
+          <li><a>{{page}}</a></li>
+          
+          <li class="next-driver">
+            <a aria-label="Next">
+              <span aria-hidden="true">&raquo;</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="row">
+        <div class="col-xs-1">
+          
+        </div>
+
+        <div class="col-xs-12">
+          <!-- <h3 class="page-header">订单列表</h3> -->
+          <div data-role="page" id="home">
+            <main data-role="content" id="content">
+              <!-- <div class="input-group">
+                <input type="text" class="form-control" id="todos" placeholder="Search Item List...">
+                <span class="input-group-btn">
+                <button class="btn btn-default" type="button">Go!</button>
+                </span>   
+              </div> -->
+
+              <table class="table table-striped orders-table">
+                <thead>
+                  <tr>
+                    <th class="order-status">状态</th>
+                    <th>创建日期</th>
+                    <th>订单号</th>
+                    <th class="order-type">订单类型</th>
+                    <th>客户姓名</th>
+                    <th>客户电话</th>
+                    <th>客户地址</th>
+                    <th class="order-sign">签收</th>
+                    <th>操作</th>
+                  </tr>
+                </thead>
+                <tbody id="order-list">
+
+                </tbody>
+              </table>
+
+              <nav class="pull-left">
+                <ul class="pagination">
+                  <li class="prev-driver">
+                    <a aria-label="Previous">
+                      <span aria-hidden="true">&laquo;</span>
+                    </a>
+                  </li>
+                  
+                  <li><a>{{page}}</a></li>
+                  
+                  <li class="next-driver">
+                    <a aria-label="Next">
+                      <span aria-hidden="true">&raquo;</span>
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+
+            </main>
+
+          </div>
+        </div>
+
+        <div class="col-xs-1">
+          <div class="add-btn">
+            <a id="add-order" href="#" class="btn btn-primary btn-xl btn-circle" aria-label="Left Align">
+              <i class="flaticon-plus"></i>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </section>
+
+</div>
+

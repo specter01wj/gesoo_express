@@ -1,0 +1,204 @@
+@import "flaticon.less";
+@import "bootstrap/less/bootstrap.less";
+@import "jquery-ui.css";
+@import "modal.less";
+@import 'preloader.less';
+@import 'sweetalert.css';
+@import 'jquery.datetimepicker.css';
+@import '_buttons';
+@import '_mixins';
+
+.preload-overlay{
+    width:100%;
+    display:block;
+    text-align: center;
+}
+
+.navbar{
+    border-radius: 0;
+}
+.navbar-brand {
+    width: 320px;
+    text-align: justify;
+}
+
+#main-view{
+    margin-bottom:80px;
+}
+
+
+.form-signin {
+    max-width: 330px;
+    padding: 15px;
+    margin: 0 auto;
+    .login-input {
+        padding: 20px 0 5px;
+        margin: 5px 0 0 0; 
+    }
+    .form-signin-heading{
+        color:#333;
+    }
+    .changepassword-label {
+        font-size: 18px;
+    }
+    input[type="email"] {
+        margin-bottom: -1px;
+        border-bottom-right-radius: 0;
+        border-bottom-left-radius: 0;
+    }
+    input[type="password"] {
+        margin-bottom: 10px;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+    }
+    .checkbox{
+        font-weight: normal;
+        padding: 0 5px 0;
+        label{
+            font-size: 15px;
+            color: #C8C8C8;
+        }
+    }
+    .form-control {
+        position: relative;
+        height: auto;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        padding: 10px;
+        font-size: 16px;
+        &:focus {
+            z-index: 2;
+        }
+    }
+}
+
+
+.add-btn {
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+}
+
+footer{
+    position: fixed;
+    margin-top:30px;
+    bottom: 0px;
+    width: 100%;
+    padding-top:20px;
+    height:60px;
+    text-align: center;
+    background-color: #1f87c2;
+    color:#fff;
+}
+
+.actions{
+    float:right;
+    margin-top:20px;
+}
+
+.tablesorter th{
+    cursor:pointer;
+    margin-top:30px;
+    bottom: 0px;
+    width: 100%;
+    padding-top:20px;
+    height:60px;
+    text-align: center;
+    background-color: #1f87c2;
+    color:#fff;
+}
+
+.actions{
+    float:right;
+    margin-top:20px;
+}
+
+
+button#order-btn-cancel, #order-btn-submit {
+    float: right;
+    width: 120px;
+    margin: 5px;
+    border: 0px;
+}
+//---float input
+@border: 1px solid #ddd;
+@padding: 13px; //10
+@label-font-size: 13px; //13
+
+*, *:before,
+    *:after {
+        box-sizing: border-box;
+    }
+
+    /*body {
+        width: 100%;
+        min-height: 300px;
+    }*/
+
+    form {
+        width: 80%;
+        margin: 2em auto;
+
+        font-family: 'Source Sans Pro', sans-serif;
+        font-weight: 300;
+        font-size: 22px;
+
+        legend {
+            font-size: 2em;
+            margin-bottom: 1em;
+            width: 100%;
+            border-bottom: @border;
+        }
+
+        label.error {
+            font-size: 11px;
+            color: red;
+        }
+
+    }
+
+
+    // float label
+    .float-label {
+        .control {
+            float: left;
+            position: relative;
+            //width: 100%;
+            border-bottom: @border !important;
+            padding-top: @padding + @label-font-size;
+            padding-bottom: @padding;
+
+            &:last-child {
+                border: 0;
+            }
+        }
+
+        input, textarea, select {
+            display: block;
+            width: 100%;
+            border: 0;
+            outline: 0;
+            resize: none;
+
+            & + .label {
+                position: absolute;
+                top: 10px;
+                transition: top 0.7s ease, opacity 0.7s ease;
+                opacity: 0;
+
+                font-size: @label-font-size;
+                font-weight: 600;
+                color: #ccc;
+            }
+
+            &:valid + .label {
+                opacity: 1;
+                top: 3px;
+            }
+
+            &:focus + .label {
+                color: #2c8efe;
+            }
+        }
+    }
