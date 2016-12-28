@@ -1,4 +1,4 @@
-Gesoo-Express-Admin
+Gesoo-Express
 
 
 type "grunt" to start the project
